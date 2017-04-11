@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<!-- CSS (load bootstrap) -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <style>
+        .navbar { border-radius:0; }
+    </style>
+
+    <!-- JS (load angular, ui-router, and our custom js file) -->
+    <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.10/ngStorage.min.js"></script>
+     <script src="//cdn.jsdelivr.net/angular.bootstrap/0.11.0/ui-bootstrap-tpls.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="js/emp.js"></script>
+<title>welcome page</title>
+</head>
+<body ng-app="routerApp">
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+        
+        <a class="navbar-brand" ui-sref="home"><img alt="logo" src="images/images.htm" style="border: 0 none;
+    height: 45px;
+    width: 56px;"/></a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><a ui-sref="home">Home</a></li>
+        <li><a ui-sref="about">About</a></li>
+        <li><a ui-sref="index">Index</a></li>
+    </ul>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+    <div ui-view></div>
+
+</div>
+<div style="position:absolute;bottom:0%;color:#fff;width:100%;text-align:center;" class="navbar navbar-inverse">Developed by IRIS bussiness Services ltd.</div>
+</body>
+</html>

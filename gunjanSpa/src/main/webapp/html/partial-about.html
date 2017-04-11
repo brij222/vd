@@ -1,0 +1,21 @@
+<!-- partial-about.html -->
+
+<div class="jumbotron text-center">
+    <h1>The About Page</h1>
+    <p>This page demonstrates <span class="text-danger">multiple</span> and <span class="text-danger">named</span> views.</p>
+</div>
+
+<div class="row">
+<a ui-sref=".empList" class="btn btn-primary">List</a>
+<a ui-sref=".empAdd" class="btn btn-primary">Add New Employee</a>
+    <!-- COLUMN ONE NAMED VIEW -->
+    <!-- <div class="col-sm-6">
+        <div ui-view="columnOne"></div>
+    </div>
+    
+    COLUMN TWO NAMED VIEW
+    <div class="col-sm-6">
+        <div ui-view="columnTwo"></div>
+    </div> -->
+<div ui-view></div>
+</div> 

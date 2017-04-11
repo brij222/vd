@@ -1,0 +1,22 @@
+<div style="background-color: lightgray;">
+<div style="background-color:green;color:#fff">{{successmsg}}</div>
+<table class="table table-hover table-striped table-bordered">
+
+<thead>
+<tr><td>FirstName</td><td>LastName</td><td>email</td><td>phone</td><td colspan="2">Actions</td></tr>
+</thead>
+<tbody>
+
+<tr ng-repeat="scotch in empList">
+            <td>{{ scotch.firstName }}</td>
+            <td>{{ scotch.lastName }}</td>
+            <td>{{scotch.email}}</td>
+            <td>{{scotch.phone}}</td>
+            <td><a ui-sref=".editEmp({ id: {{scotch.id}} })" style="cursor:pointer;">Edit</a></td>
+            <td><a ui-sref=".deleteEmp({ id: {{scotch.id}} })" style="cursor:pointer;">Delete</a></td>
+        </tr>
+</tbody>
+</table>
+
+<div ui-view></div>
+</div>

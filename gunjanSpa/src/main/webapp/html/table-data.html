@@ -1,0 +1,15 @@
+
+<h3>Fine Scotches:</h3>
+<div ng-controller="scotchController">
+<table class="table table-hover table-striped table-bordered">
+<thead>
+<tr><td>Name</td><td>Cost</td></tr>
+</thead>
+<tbody>
+<tr ng-repeat="scotch in scotches">
+            <td>{{ scotch.name }}</td>
+            <td>${{ scotch.price }}</td>
+        </tr>
+</tbody>
+</table>
+</div>

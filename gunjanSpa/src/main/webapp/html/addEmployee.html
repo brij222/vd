@@ -1,0 +1,15 @@
+<div style="background-color: lightgreen;" ng-controller="addCtrl">
+<form ng-submit="login()" class="form">
+  <label>First name</label>
+  <input type="text" ng-model="firstName" class="ng-pristine ng-valid"><br>
+  <label>Last name</label>
+  <input type="text" ng-model="lastName" class="ng-pristine ng-valid"><br>
+  <label>Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" ng-model="email" class="ng-pristine ng-valid"><br>
+  <label>Phone</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" ng-model="phone" class="ng-pristine ng-valid"><br>
+  <br/>
+  <button class="btn btn-success" ng-click="">Submit</button>
+  <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+</form>
+</div>
